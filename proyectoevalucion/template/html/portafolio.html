@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} <br>
+
+<style>
+    li{
+        font-size: 30px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .listado{
+        margin-left: 20%;
+    }
+    ol{
+        color: gray;
+    }
+</style>
+<div class="listado">
+    <br><p>Se cuenta con servicios tales como</p>
+<br><ul>
+    <li>Creacion de 
+        <ol>- Aplicaciones web</ol>
+        <ol>- Aplicaciones de escritorio</ol>
+        <ol>- Base de datos</ol>
+    </li><br><br>
+
+    <li>Venta de 
+        <ol>- Computadores de escrtitorio</ol>
+        <ol>- PC</ol>
+        <ol>- Celulares</ol>
+        <ol>- Tablet</ol>
+        <ol>- Cargadores universales</ol>
+    </li>
+</ul>
+</div>
+
+
+<br> {% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} <br>
+
+<style>
+    .video{
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+    }
+    p{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
+<div class="video">
+    <br><iframe width="760" height="515" src="https://www.youtube.com/embed/2C8ff-QW2_U?si=jIWJOvkDzKlGwJpZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+    
+<br><p>📚💻 La diferencia que existe entre un programador, 
+un desarrollador de software y un ingeniero de sistemas,</p>
+<p>software o informática, es que cada uno tiene una área de conocimiento mas amplia</p>  
+<p>cuando hablamos de desarrollar software. Aunque ambos tienen en común el escribir código,</p> 
+<p>la verdad es que sus funciones son un tanto diferentes y obviamente no son términos semejantes o sinónimos.</p> 
+
+<br> {% endblock %}

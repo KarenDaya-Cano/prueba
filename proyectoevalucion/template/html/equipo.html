@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} <br>
+
+<style>
+   table{
+        justify-content: center;
+        display: grid;
+        
+    }
+    th{
+        background: rgb(235, 235, 119);
+    }
+    td,th{
+        text-align: center;
+        font-size: 18px;
+        width: 220px;
+        border:1px solid black;
+        padding: 5px;
+
+    }
+</style>
+<br><br>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>Edad</th>
+    </tr>
+    <tr>
+        <td>Karen</td>
+        <td>Cano Garcia</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Xiomara</td>
+        <td>Pulido Ruiz</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Mateo</td>
+        <td>Quintana Ospina</td>
+        <td>20</td>
+    </tr>
+
+
+</table>
+
+<br> {% endblock %}

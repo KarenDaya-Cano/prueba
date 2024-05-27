@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %} <br>
+
+<style>
+    .formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    border: 10px double darkgoldenrod;
+    box-shadow: 10px 10px 3px rgba(2,3,0,0.4);
+}
+
+.formulario h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: maroon;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    height: 150px;
+}
+.formulario p{
+    font-weight: bold;
+    color: rgb(170, 125, 11);
+    font-size: 20px;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: maroon;
+}
+
+</style>
+
+<body>
+    <br><form class="formulario" action="/contacto/" method="post"> {% csrf_token %}
+        <h1>Contactanos</h1>
+
+        <p>Asunto <input type="text" name="asunto"></p>
+        <p>Nombre <input type="text" name="nombre"></p>
+        <p>Email <input type="text" name="email"></p>
+        <p>Mensaje <textarea name="mensaje" cols="30" rows="10"></textarea></p>
+        <input type="submit" value="Enviar">
+    </form> <br>
+
+</body>
+
+<br> {% endblock %}
